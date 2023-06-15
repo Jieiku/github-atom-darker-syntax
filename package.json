@@ -1,30 +1,45 @@
 {
-  "version": "0.5.0",
-  "name": "github-atom-dark-syntax",
-  "theme": "syntax",
-  "description": "GitHub's official dark syntax theme as an atom theme",
-  "homepage": "https://github.com/primer/github-atom-dark-syntax#readme",
-  "style": "index.less",
-  "author": "GitHub Inc.",
-  "license": "MIT",
+  "_from": " ",
+  "_id": "github-atom-darker-syntax@0.6.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/github-atom-darker-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": " ",
+    "rawSpec": " ",
+    "saveSpec": " ",
+    "fetchSpec": " "
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": " ",
+  "_shasum": "91b04d51c7f14d8de55c476b0cb835e6fd4d8979",
+  "_spec": " ",
+  "_where": "/tmp/apm-install-dir-20221015-132388-10xynrc.m3g4",
+  "author": {
+    "name": "GitHub Inc, modified by Jieiku"
+  },
+  "bugs": {
+    "url": "https://github.com/Jieiku/github-atom-darker-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "GitHub's official dark syntax theme as an atom theme, modified for higher contrast.",
+  "devDependencies": {
+    "github-atom-darker-syntax": "*"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
   "files": [
     "index.less",
     "styles"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/primer/github-atom-dark-syntax.git"
-  },
-  "bugs": {
-    "url": "https://github.com/primer/github-syntax-theme-generator/issues"
-  },
-  "scripts": {
-    "_version": "apm publish $(npm view github-syntax-theme-generator version)",
-    "_commit": "git commit -am \"$(npm view github-syntax-theme-generator version)\"",
-    "_update": "npm update && cp -rf node_modules/github-syntax-theme-generator/build/atom/github-dark/*.less ./styles/",
-    "ship": "npm run _update && npm run _commit && npm run _version",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/Jieiku/github-atom-darker-syntax#readme",
   "keywords": [
     "github",
     "syntax",
@@ -34,10 +49,20 @@
     "code",
     "dark"
   ],
-  "devDependencies": {
-    "github-syntax-theme-generator": "*"
+  "license": "MIT",
+  "name": "github-atom-darker-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jieiku/github-atom-darker-syntax.git"
   },
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  }
+  "scripts": {
+    "_commit": "git commit -am \"$(npm view github-atom-darker-syntax version)\"",
+    "_update": "npm update && cp -rf node_modules/github-atom-darker-syntax/build/atom/github-dark/*.less ./styles/",
+    "_version": "apm publish $(npm view github-atom-darker-syntax version)",
+    "ship": "npm run _update && npm run _commit && npm run _version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "style": "index.less",
+  "theme": "syntax",
+  "version": "0.6.0"
 }
